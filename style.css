@@ -1,0 +1,48 @@
+/* Styles par défaut */
+.card {
+    margin-bottom: 20px;
+  }
+
+  /* Media queries pour les écrans de taille moyenne (tablettes) */
+  @media (min-width: 768px) {
+    .col-md-10 {
+      width: 83.33333333%; /* 10/12 */
+    }
+    .ml-sm-auto {
+      margin-left: auto;
+    }
+    .col-lg-10 {
+      width: 83.33333333%; /* 10/12 */
+    }
+    .px-4 {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+    }
+  }
+
+  /* Media queries pour les écrans de grande taille (ordinateurs de bureau) */
+  @media (min-width: 992px) {
+    .col-md-10, .ml-sm-auto, .col-lg-10, .px-4 {
+      /* Réinitialiser les styles */
+      width: auto;
+      margin-left: auto;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .col-sm-6 {
+      flex: 0 0 50%; /* Occupe 50% de largeur sur les grands écrans */
+      max-width: 50%;
+    }
+  }
+
+  /* Media queries pour les écrans de très grande taille (écrans larges) */
+  @media (min-width: 1200px) {
+    .col-sm-6 {
+      flex: 0 0 33.33333333%; /* Occupe 33.33% de largeur sur les très grands écrans */
+      max-width: 33.33333333%;
+    }
+  }
